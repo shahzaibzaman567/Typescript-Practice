@@ -46,3 +46,57 @@ function Car2(Car2) {
     return msg;
 }
 console.log(Car2(Car1));
+//                          Task 3                              //
+var carCacheIndex = [
+    {
+        Brand: "Toyota",
+        Model: "Suzaki",
+        Year: 2001,
+        isElectric: false
+    },
+    {
+        Brand: "Tesla",
+        Model: "fortuner",
+        Year: 2001,
+        isElectric: true,
+    }
+];
+console.log(carCacheIndex[1]);
+//All value has put 
+var Person1 = {
+    Name: "shahzaibZaman",
+    Age: 15,
+    Height: 5.4,
+    Address: {
+        country: "Pakistan",
+        state: "Islamabd",
+        city: "Peshawar"
+    }
+};
+//final result
+console.log(Person1);
+//Craet a function which recive only those type  which has filter funciton  
+//Using Generic  Type   <T>
+//// || Task 4 || ////
+//This is very long and diffecult so we can use generics  
+function Vega(Name) {
+    return Name;
+}
+console.log(Vega("Potato"));
+console.log(Vega(100));
+//HOw to use genric and this advanteges 
+//Q! how can not use any  ?
+//Ans  is and  can return the data type of this potato 100 and true is Any but 
+//But the <T> means  generic  return the type like 100 return number.
+function Fruit(Name) {
+    return Name;
+}
+console.log(Fruit("Potato"));
+console.log(Fruit(100));
+console.log(Fruit(true));
+//Generic in array
+function arraychech(data) {
+    data.filter(function (item) { return true; });
+    console.log(data);
+}
+arraychech([123, 333, 33, "3333"]);

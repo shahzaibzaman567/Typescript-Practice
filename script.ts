@@ -82,13 +82,99 @@ function Car2(Car2: Car){
 }
 console.log(Car2(Car1));
 
+                    //                          Task 3                              //
+
+let carCacheIndex:Car[]=[
+    {
+        Brand:"Toyota",
+        Model:"Suzaki",
+        Year:2001,
+        isElectric:false
+        },
+        
+        {
+            Brand:"Tesla",
+            Model:"fortuner",
+            Year:2001,
+            isElectric:true,
+            }
+            
+    
+]
+
+
+console.log(carCacheIndex[1])
+
+
+//The Address has inheri in person
+interface  address{
+    country:string,
+    state:string,
+    city:string
 
 
 
+}
+
+interface Person  {
+    Name:string,
+    Age:number,
+    Height:number,
+    Address:address
+
+}
+//All value has put 
+const Person1:Person={
+    Name:"shahzaibZaman",
+    Age:15,
+    Height:5.4,
+    Address:{
+        country:"Pakistan",
+        state:"Islamabd",
+        city:"Peshawar"
+    }
+
+    
+}
+//final result
+console.log(Person1)
+
+//Craet a function which recive only those type  which has filter funciton  
+//Using Generic  Type   <T>
+               //// || Task 4 || ////
+
+               //This is very long and diffecult so we can use generics  
+
+function Vega(Name:string|number):string|number{
+    return Name;
+
+}
+
+console.log(Vega("Potato"))
+console.log(Vega(100))
 
 
+//HOw to use genric and this advanteges 
 
+//Q! how can not use any  ?
+//Ans  is and  can return the data type of this potato 100 and true is Any but 
+//But the <T> means  generic  return the type like 100 return number.
 
+function Fruit<T>(Name:T):T{
+    return Name;
 
+}
 
+console.log(Fruit("Potato"))
+console.log(Fruit(100))
+console.log(Fruit(true))
+
+//Generic in array
+
+function arraychech<T extends{filter:Function}>(data:T):void{
+    data.filter((item:any)=>true);
+    console.log(data)
+
+}
+arraychech([123,333,33,"3333"])
 
