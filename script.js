@@ -1,24 +1,25 @@
+"use strict";
 //Type Annotation
 //Type  Annotation to check the type of parameter variable functio     
 //Type function
-var Name = "Hello  " + "ShahzaibZaman";
+let Name = "Hello  " + "ShahzaibZaman";
 console.log(Name);
 //Type Number
-var age = 25;
+let age = 25;
 age = 44;
 console.log(age);
 //Type Boolean
-var islam = true;
+let islam = true;
 console.log(islam);
 //    CHAT GBT                          TASK  About Type Annotation 
-var userName = "ShahzaibZaman";
-var userAge = 15;
-var isOnline = true;
-console.log("User   ".concat(userName, "  is ").concat(userAge, " year old  and currently   ").concat(isOnline ? "online" : "ofline"));
+let userName = "ShahzaibZaman";
+let userAge = 15;
+let isOnline = true;
+console.log(`User   ${userName}  is ${userAge} year old  and currently   ${isOnline ? "online" : "ofline"}`);
 //Add type annotation in para meter
 function userData(userName, userAge, isOnline) {
     //   return  the msg
-    return "User   ".concat(userName, "  is ").concat(userAge, " year old  and currently   ").concat(isOnline ? "online" : "ofline");
+    return `User   ${userName}  is ${userAge} year old  and currently   ${isOnline ? "online" : "ofline"}`;
 }
 console.log(userData("Ali", 20, false));
 //  Sir                     Task of Type Annotaion
@@ -30,11 +31,11 @@ function Multiply(numone, numtwo) {
 console.log(Multiply(3, 3));
 //                  Task 2
 function Data(Fullname, Age) {
-    var msg = "".concat(Fullname, " is ").concat(Age, " Year old.");
+    let msg = `${Fullname} is ${Age} Year old.`;
     return msg;
 }
 console.log(Data("Allah Bakash", 30));
-var Car1 = {
+const Car1 = {
     Brand: "Toyota",
     Model: "Suzaki",
     Year: 2001,
@@ -42,12 +43,12 @@ var Car1 = {
 };
 console.log(Car1);
 function Car2(Car2) {
-    var msg = "The ".concat(Car2.Brand, " Model ").concat(Car2.Model, " was made in ").concat(Car2.Year, " and it is ").concat(Car2.isElectric ? " Electric Car" : "Not Eletric car", ";   ");
+    let msg = `The ${Car2.Brand} Model ${Car2.Model} was made in ${Car2.Year} and it is ${Car2.isElectric ? " Electric Car" : "Not Eletric car"};   `;
     return msg;
 }
 console.log(Car2(Car1));
 //                          Task 3                              //
-var carCacheIndex = [
+let carCacheIndex = [
     {
         Brand: "Toyota",
         Model: "Suzaki",
@@ -63,7 +64,7 @@ var carCacheIndex = [
 ];
 console.log(carCacheIndex[1]);
 //All value has put 
-var Person1 = {
+const Person1 = {
     Name: "shahzaibZaman",
     Age: 15,
     Height: 5.4,
@@ -96,7 +97,21 @@ console.log(Fruit(100));
 console.log(Fruit(true));
 //Generic in array
 function arraychech(data) {
-    data.filter(function (item) { return true; });
+    data.filter((item) => true);
     console.log(data);
 }
 arraychech([123, 333, 33, "3333"]);
+//chat GBT   task  
+function oodEven(num) {
+    if (num % 2 === 1) {
+        console.log("ood number");
+    }
+    else {
+        console.log("its event number");
+    }
+}
+console.log(oodEven(34));
+function marafun(data) {
+    return data.Name;
+}
+console.log(marafun({ Name: "ali" }));

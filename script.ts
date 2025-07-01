@@ -178,3 +178,21 @@ function arraychech<T extends{filter:Function}>(data:T):void{
 }
 arraychech([123,333,33,"3333"])
 
+//chat GBT   task  
+
+function oodEven(num:number){
+    if(num % 2===1){
+           console.log("ood number")
+    }else{
+        console.log("its event number")
+    }
+}
+console.log(oodEven(34))
+
+
+function marafun<T extends {Name:string}>(data:T){
+  return  data.Name 
+} 
+console.log(marafun({Name:"ali"}))
+
+
