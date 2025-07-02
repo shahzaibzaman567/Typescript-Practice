@@ -5,19 +5,58 @@ console.log("Worlds")
 // Union and intersection type 
 //    ||          task       ||         //
 
-interface Admin{
-    Name:string;
-    role:"Admin"
+interface Admin {
+    Name: string;
+    role: "Admin"
 }
 
-interface Costumer{
-    username:string;
-    Purchase:number;
+interface Costumer {
+    username: string;
+    Purchase: number;
 }
+//to give   Admin or Costomer this is called union
+function Login(User: Admin | Costumer) {
 
-  function Login(User:Admin | Costumer){
-  
     return User;
-  }      
-  console.log(Login({Name:"ali",role:"Admin"}));
-  console.log(Login({username:"shahzaib",Purchase:3000}))
+}
+console.log(Login({ Name: "ali", role: "Admin" }));
+console.log(Login({ username: "shahzaib", Purchase: 3000 }))
+
+//              task   2         //
+
+
+
+
+// interface  superUser extends Admin{
+//     Name:string;
+//     role:"Admin";
+//     Costumer:string;
+//     Purchase:number;
+
+//}
+
+
+
+
+
+function  Intersection(Super:Admin&Costumer){
+
+return  Super
+
+}
+
+console.log(Intersection({Name:"ali",role:"Admin",username:"shah",Purchase:200}) )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
