@@ -1,0 +1,21 @@
+{
+  "name": "typescript-practice",
+  "version": "1.0.0",
+  "description": "The  all     practice  of all   typescript  concept",
+  "main": "script.js",
+  "scripts": {
+    "union": "node UnionIntersection.js"
+  }
+  ,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shahzaibzaman567/Typescript-Practice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shahzaibzaman567/Typescript-Practice/issues"
+  },
+  "homepage": "https://github.com/shahzaibzaman567/Typescript-Practice#readme"
+}
