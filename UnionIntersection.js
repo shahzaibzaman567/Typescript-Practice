@@ -5,7 +5,6 @@ console.log("Worlds");
 function Login(User) {
     return User;
 }
-console.log(Login({ Name: "ali", role: "Admin" }));
 console.log(Login({ username: "shahzaib", Purchase: 3000 }));
 //              task   2         //
 //Intersection
@@ -18,13 +17,16 @@ console.log(Login({ username: "shahzaib", Purchase: 3000 }));
 function Intersection(Super) {
     return Super;
 }
-console.log(Intersection({ Name: "ali", role: "Admin", username: "shah", Purchase: 200 }));
-const St1 = {
+const s1 = {
     Name: "shahzaib",
-    Class: 9 + "th",
-    RollNo: 804
+    Class: "9th",
+    RollNo: 200
 };
-console.log(St1);
+// const S1:Student={
+//     Name:"shahzaib",
+//     Class: "th",
+//     RollNo:804
+// }
 //            ||          Task with Enum        ||    //
 //what is enum to we use to creat a group of we kam a constant valu  
 var Role;

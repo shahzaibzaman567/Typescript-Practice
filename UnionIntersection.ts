@@ -19,7 +19,6 @@ function Login(User: Admin | Costumer) {
 
     return User;
 }
-console.log(Login({ Name: "ali", role: "Admin" }));
 console.log(Login({ username: "shahzaib", Purchase: 3000 }))
 
 //              task   2         //
@@ -39,41 +38,45 @@ console.log(Login({ username: "shahzaib", Purchase: 3000 }))
 
 
 
-function  Intersection(Super:Admin&Costumer){
+function  Intersection(Super:Admin  &   Costumer){
 
 return  Super
 
 }
 
-console.log(Intersection({Name:"ali",role:"Admin",username:"shah",Purchase:200}) )
+// console.log(Intersection({Name:"ali",role:"Admin",username:"shah",Purchase:200}) )
 
 
 //what  is Auto Merging ?  
 //Auto merging can use in interface only the interface was declare but use all properties
 //this is called overloading
 
-interface Student{
+interface STudent{
     Name:string;
 }
 
-interface Student{
+interface STudent{
     Class:string ;
 }
-interface Student{
+interface STudent{
     RollNo:number;
 
 }
 
-const St1:Student={
+const   s1:STudent={
     Name:"shahzaib",
-    Class: 9 +"th",
-    RollNo:804
+    Class:"9th",
+    RollNo:200
 }
+// const S1:Student={
+//     Name:"shahzaib",
+//     Class: "th",
+//     RollNo:804
+// }
 
 
 
 
-console.log(St1);
 
 //            ||          Task with Enum        ||    //
 //what is enum to we use to creat a group of we kam a constant valu  
